@@ -2,7 +2,7 @@ import streamlit as st
 from google.cloud import firestore
 
 # Authenticate to Firestore with the JSON account key.
-db = firestore.Client.from_service_account_json("app/assets/firestore.json")
+db = firestore.Client.from_service_account_json("app/db/firestore.json")
 
 # Create a reference to the Google post.
 doc_ref = db.collection("datas").document("Nodpydatas")
